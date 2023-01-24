@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 44vh,left 50vw top 44vh;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 350px;
+    height: 375px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.profil{
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    top: 85px;
+    left: 120px;
+}
+h1{
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 700;
+}
+span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    padding-left: 5px;
+}
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.text .text-p{
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+.marks{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+.mark h2{
+    font-size: 18px;
+}
+.mark p{
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 1px;
+}
+hr{
+    border: none;
+    background-color: hsl(0, 0%, 59%);
+    height: 0.5px;
+    opacity: 0.5;
+}
